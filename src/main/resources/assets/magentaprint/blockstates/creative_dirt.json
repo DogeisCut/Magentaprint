@@ -1,0 +1,21 @@
+{
+  "variants": {
+    "": [
+      {
+        "model": "magentaprint:block/creative_dirt"
+      },
+      {
+        "model": "magentaprint:block/creative_dirt",
+        "y": 90
+      },
+      {
+        "model": "magentaprint:block/creative_dirt",
+        "y": 180
+      },
+      {
+        "model": "magentaprint:block/creative_dirt",
+        "y": 270
+      }
+    ]
+  }
+}

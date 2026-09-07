@@ -1,6 +1,8 @@
 {
   "itemGroup.magentaprint": "Magentaprint",
 
+  "item.magentaprint.creative_cookie": "Creative Cookie",
   "item.magentaprint.creative_ore_ingot": "Creative Ore Ingot",
-  "item.magentaprint.creative_cookie": "Creative Cookie"
+
+  "block.magentaprint.creative_dir": "Creative Dirt"
 }
