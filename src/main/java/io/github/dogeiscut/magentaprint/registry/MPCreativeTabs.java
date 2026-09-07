@@ -19,7 +19,7 @@ public final class MPCreativeTabs {
             "magentaprint",
             () -> CreativeModeTab.builder()
                     .title(Component.translatable("itemGroup." + Magentaprint.MOD_ID))
-                    .icon(() -> new ItemStack(Items.MAGENTA_DYE))
+                    .icon(() -> new ItemStack(MPItems.CREATIVE_COOKIE.get()))
                     .displayItems((params, output) -> MPItems.ITEMS.getEntries()
                             .forEach(holder -> output.accept(holder.get())))
                     .build()
