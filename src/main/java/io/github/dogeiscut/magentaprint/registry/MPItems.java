@@ -2,7 +2,6 @@ package io.github.dogeiscut.magentaprint.registry;
 
 import io.github.dogeiscut.magentaprint.Magentaprint;
 import io.github.dogeiscut.magentaprint.util.ItemHelper;
-import net.minecraft.world.effect.MobEffect;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.food.FoodProperties;
@@ -12,7 +11,6 @@ import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredBlock;
 import net.neoforged.neoforge.registries.DeferredRegister;
 
-import java.util.List;
 import java.util.function.Function;
 import java.util.function.Supplier;
 
