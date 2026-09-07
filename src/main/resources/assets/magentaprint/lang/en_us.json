@@ -1,5 +1,3 @@
 {
-  "itemGroup.magentaprint": "Example Mod Tab",
-  "block.magentaprint.example_block": "Example Block",
-  "item.magentaprint.example_item": "Example Item"
+  "itemGroup.magentaprint": "Magentaprint"
 }
