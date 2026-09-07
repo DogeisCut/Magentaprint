@@ -17,6 +17,7 @@ public final class MPBlocks {
     public static final DeferredRegister.Blocks BLOCKS = DeferredRegister.createBlocks(Magentaprint.MOD_ID);
 
     public static final DeferredBlock<Block> CREATIVE_DIRT = blockWithItem("creative_dirt", BlockBehaviour.Properties.ofFullCopy(Blocks.DIRT), ItemHelper.creativeProperties());
+    public static final DeferredBlock<Block> RAW_CREATIVE_ORE_BLOCK = blockWithItem("raw_creative_ore_block", BlockBehaviour.Properties.ofFullCopy(Blocks.RAW_IRON_BLOCK), ItemHelper.creativeProperties());
 
     public static DeferredBlock<Block> block(String name, BlockBehaviour.Properties properties) {
         return BLOCKS.registerSimpleBlock(name, properties);
