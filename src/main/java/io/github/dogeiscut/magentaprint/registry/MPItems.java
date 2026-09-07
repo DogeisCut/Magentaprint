@@ -31,6 +31,7 @@ public final class MPItems {
             ))
     );
 
+    public static final Supplier<Item> RAW_CREATIVE_ORE = creativeItem("raw_creative_ore");
     public static final Supplier<Item> CREATIVE_ORE_INGOT = creativeItem("creative_ore_ingot");
 
     public static Supplier<Item> basicItem(String name) {

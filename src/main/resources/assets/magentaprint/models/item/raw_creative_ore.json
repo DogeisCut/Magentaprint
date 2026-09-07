@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "magentaprint:item/raw_creative_ore"
+  }
+}
