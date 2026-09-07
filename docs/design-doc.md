@@ -33,7 +33,7 @@ None of these items have survival crafting recipes by default. They are designed
 * **Creative Compass:** Can save and track any target coordinate directly without a Lodestone.
 * **Creative Lodestone:** Right-clicking it (or using a linked compass) teleports the player directly above its location.
 * **Creative Trial Key:** Unlocks any vault infinitely.
-* **Creative Lead:** Leashes multiple entities simultaneously, including players and non-leadable mobs.
+* **Creative Lead:** Leashes multiple entities simultaneously, including players and non-leadable mobs, also never snaps.
 * **Creative Armor Trim:** Completely covers armor textures instead of just adding accent lines.
 
 ### Functional Blocks and Station Alternatives
@@ -73,7 +73,7 @@ None of these items have survival crafting recipes by default. They are designed
 * **Creative Snowball:** Inflicts 1 heart of damage on hit and is never consumed.
 * **Creative Cookie:** Eaten once to permanently max out Food and Saturation meters.
 * **Creative Apple:** Grants every positive status effect at its highest natural potency for 5 minutes.
-* **Infinite Creative Apple:** Grants every positive effect permanently and is not consumed on use.
+* **Enchanted Creative Apple:** Grants every positive effect permanently and is not consumed on use.
 * **Creative Pufferfish:** Instantly kills the player when eaten.
 * **Creative Potion:** Grants Creative Flight mode for the duration of the effect.
 * **Creative Ender Pearl:** Teleports without dealing fall damage or consuming the pearl.
@@ -97,7 +97,7 @@ None of these items have survival crafting recipes by default. They are designed
 * **Creative Boat:** Carries up to 8 passengers, travels at extreme speeds, and is invulnerable to non-creative damage.
 * **Creative Scaffolding:** Places without structural distance limits and never falls (can still be chain-broken).
 * **Creative Dirt:** Does nothing lol.
-* **Creative Clock:** Allows direct time-of-day adjustment via a right-click GUI.
+* **Creative Clock:** Allows direct time-of-day adjustment via scrolling, which changes the texture and prints an action bar message of the time selected. Right clicking will apply that time.
 * **Creative Sapling:** Grows into a custom Creative Wood and Leaves set. The tree is also HUGE and resembles spruce trees because those are clearly the best wood type.
 * **Creative Creature:** Invincible, passive decorative mob.
 * **Creative Mob:** Invincible, aggressive humanoid mob using the player model (like zombies).
