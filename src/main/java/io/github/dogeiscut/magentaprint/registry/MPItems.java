@@ -4,7 +4,9 @@ import io.github.dogeiscut.magentaprint.Magentaprint;
 import io.github.dogeiscut.magentaprint.util.ItemHelper;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
+import net.minecraft.world.entity.EquipmentSlotGroup;
 import net.minecraft.world.food.FoodProperties;
+import net.minecraft.world.item.ArmorItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
 import net.neoforged.bus.api.IEventBus;
@@ -32,7 +34,34 @@ public final class MPItems {
     public static final Supplier<Item> RAW_CREATIVE_ORE = creativeItem("raw_creative_ore");
     public static final Supplier<Item> CREATIVE_ORE_INGOT = creativeItem("creative_ore_ingot");
 
-    public static final Supplier<Item> CREATIVE_CHESTPLATE = creativeItem("creative_ore_ingot");
+    public static final Supplier<ArmorItem> CREATIVE_HELMET = item("creative_helmet",
+            properties -> new ArmorItem(MPArmorMaterials.CREATIVE, ArmorItem.Type.HELMET, ItemHelper.creativeArmorProperties(
+                    EquipmentSlotGroup.HEAD,
+                    "creative_helmet",
+                    0.25d
+            ))
+    );
+    public static final Supplier<ArmorItem> CREATIVE_CHESTPLATE = item("creative_chestplate",
+            properties -> new ArmorItem(MPArmorMaterials.CREATIVE, ArmorItem.Type.CHESTPLATE, ItemHelper.creativeArmorProperties(
+                    EquipmentSlotGroup.CHEST,
+                    "creative_chestplate",
+                    0.25d
+            ))
+    );
+    public static final Supplier<ArmorItem> CREATIVE_LEGGINGS = item("creative_leggings",
+            properties -> new ArmorItem(MPArmorMaterials.CREATIVE, ArmorItem.Type.LEGGINGS, ItemHelper.creativeArmorProperties(
+                    EquipmentSlotGroup.LEGS,
+                    "creative_leggings",
+                    0.25d
+            ))
+    );public static final Supplier<ArmorItem> CREATIVE_BOOTS = item("creative_boots",
+            properties -> new ArmorItem(MPArmorMaterials.CREATIVE, ArmorItem.Type.BOOTS, ItemHelper.creativeArmorProperties(
+                    EquipmentSlotGroup.FEET,
+                    "creative_boots",
+                    0.25d
+            ))
+    );
+
 
     public static Supplier<Item> basicItem(String name) {
         return ITEMS.registerSimpleItem(name);
