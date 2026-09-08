@@ -79,6 +79,8 @@ None of these items have survival crafting recipes by default. They are designed
 * **Creative Ender Pearl:** Teleports without dealing fall damage or consuming the pearl.
 * **Creative Firework:** Lasts indefinitely for infinite Elytra boosting.
 * **Creative Goat Horn:** Opens a GUI menu to play any game sound, defaults to a [loud airhorn audio file.](https://www.myinstants.com/en/instant/very-loud-airhorn/)
+* **Creative Milk:** Cures only every neutral and negative effect.
+* **Creative Honey:** Cures every negative effect.
 
 ### Explosives, Fire and Fluids
 
@@ -99,8 +101,8 @@ None of these items have survival crafting recipes by default. They are designed
 * **Creative Dirt:** Does nothing lol.
 * **Creative Clock:** Allows direct time-of-day adjustment via scrolling, which changes the texture and prints an action bar message of the time selected. Right clicking will apply that time.
 * **Creative Sapling:** Grows into a custom Creative Wood and Leaves set. The tree is also HUGE and resembles spruce trees because those are clearly the best wood type.
-* **Creative Creature:** Invincible, passive decorative mob.
-* **Creative Mob:** Invincible, aggressive humanoid mob using the player model (like zombies).
+* **Creative Creature:** Invincible, passive decorative mob. Can be tamed and bred too\!
+* **Creative Mob:** Invincible, aggressive humanoid mob using the player model (like zombies). Will take any item a creative player right clicks them with. Can use just about any item (crossbows, melee, bows, tridents, even maces)
 
 ### Miscellaneous
 
