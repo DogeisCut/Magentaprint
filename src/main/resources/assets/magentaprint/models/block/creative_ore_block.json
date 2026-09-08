@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "magentaprint:block/creative_ore_block"
+  }
+}

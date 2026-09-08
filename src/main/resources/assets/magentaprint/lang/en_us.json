@@ -1,6 +1,8 @@
 {
   "itemGroup.magentaprint": "Magentaprint",
 
+  "attributes.magentaprint.total_damage_reduction": "Total Damage Reduction",
+
   "item.magentaprint.creative_helmet": "Creative Helmet",
   "item.magentaprint.creative_chestplate": "Creative Chestplate",
   "item.magentaprint.creative_leggings": "Creative Leggings",

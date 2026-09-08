@@ -21,6 +21,7 @@ public class Magentaprint {
     public Magentaprint(IEventBus modEventBus, ModContainer modContainer) {
 
         MPDataComponents.register(modEventBus);
+        MPAttributes.register(modEventBus);
         MPArmorMaterials.register(modEventBus);
         MPItems.register(modEventBus);
         MPBlocks.register(modEventBus);
