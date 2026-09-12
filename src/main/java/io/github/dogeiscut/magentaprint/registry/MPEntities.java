@@ -1,6 +1,7 @@
 package io.github.dogeiscut.magentaprint.registry;
 
 import io.github.dogeiscut.magentaprint.Magentaprint;
+import io.github.dogeiscut.magentaprint.content.entities.creative_creature.CreativeCreatureEntity;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.EntityType;
@@ -14,6 +15,14 @@ public final class MPEntities {
 
     public static final DeferredRegister<EntityType<?>> ENTITY_TYPES =
             DeferredRegister.create(Registries.ENTITY_TYPE, Magentaprint.MOD_ID);
+
+    public static final Supplier<EntityType<CreativeCreatureEntity>> CREATIVE_CREATURE = entity(
+            "creative_creature",
+            CreativeCreatureEntity::new,
+            MobCategory.CREATURE,
+            0.5f,
+            0.5f
+    );
 
     public static <T extends Entity> Supplier<EntityType<T>> entity(
             String name,
