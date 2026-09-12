@@ -20,8 +20,14 @@ public final class ItemHelper {
                 .rarity(Rarity.EPIC);
     }
 
-    public static Item.Properties creativeArmorProperties(EquipmentSlotGroup equipmentSlotGroup, String id, double damageReduction) {
-        return creativeProperties()
+    public static Item.Properties creativeProperties(Item.Properties properties) {
+        return properties
+                .component(DataComponents.UNBREAKABLE, new Unbreakable(false))
+                .rarity(Rarity.EPIC);
+    }
+
+    public static Item.Properties creativeArmorProperties(Item.Properties properties, EquipmentSlotGroup equipmentSlotGroup, String id, double damageReduction) {
+        return creativeProperties(properties)
                 .stacksTo(1)
                 .attributes(
                         ItemAttributeModifiers.builder()

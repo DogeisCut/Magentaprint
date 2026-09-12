@@ -40,6 +40,10 @@ public final class NeoForgeEvents {
         AttributeInstance instance = attributes.getInstance(MPAttributes.TOTAL_DAMAGE_REDUCTION);
         if (instance != null) {
             double damage_reduction = instance.getValue();
+            if (damage_reduction - Mth.EPSILON <= 0.0d) {
+                event.setCanceled(false);
+                return;
+            }
             if (damage_reduction + Mth.EPSILON >= 1.0d) {
                 event.setCanceled(true);
                 return;

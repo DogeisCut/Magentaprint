@@ -36,6 +36,7 @@ public final class MPItems {
 
     public static final Supplier<ArmorItem> CREATIVE_HELMET = item("creative_helmet",
             properties -> new ArmorItem(MPArmorMaterials.CREATIVE, ArmorItem.Type.HELMET, ItemHelper.creativeArmorProperties(
+                    properties,
                     EquipmentSlotGroup.HEAD,
                     "creative_helmet",
                     0.25d
@@ -43,6 +44,7 @@ public final class MPItems {
     );
     public static final Supplier<ArmorItem> CREATIVE_CHESTPLATE = item("creative_chestplate",
             properties -> new ArmorItem(MPArmorMaterials.CREATIVE, ArmorItem.Type.CHESTPLATE, ItemHelper.creativeArmorProperties(
+                    properties,
                     EquipmentSlotGroup.CHEST,
                     "creative_chestplate",
                     0.25d
@@ -50,12 +52,14 @@ public final class MPItems {
     );
     public static final Supplier<ArmorItem> CREATIVE_LEGGINGS = item("creative_leggings",
             properties -> new ArmorItem(MPArmorMaterials.CREATIVE, ArmorItem.Type.LEGGINGS, ItemHelper.creativeArmorProperties(
+                    properties,
                     EquipmentSlotGroup.LEGS,
                     "creative_leggings",
                     0.25d
             ))
     );public static final Supplier<ArmorItem> CREATIVE_BOOTS = item("creative_boots",
             properties -> new ArmorItem(MPArmorMaterials.CREATIVE, ArmorItem.Type.BOOTS, ItemHelper.creativeArmorProperties(
+                    properties,
                     EquipmentSlotGroup.FEET,
                     "creative_boots",
                     0.25d

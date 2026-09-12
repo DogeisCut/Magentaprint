@@ -8,7 +8,7 @@ import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.common.PercentageAttribute;
 import net.neoforged.neoforge.registries.DeferredRegister;
 
-public class MPAttributes {
+public final class MPAttributes {
 
     public static final DeferredRegister<Attribute> ATTRIBUTES  =
             DeferredRegister.create(Registries.ATTRIBUTE, Magentaprint.MOD_ID);

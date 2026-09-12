@@ -35,7 +35,7 @@ public final class MPArmorMaterials {
             () -> Ingredient.of(MPItems.CREATIVE_ORE_INGOT.get()),
             java.util.List.of(new ArmorMaterial.Layer(MPUtils.id("creative"))),
             8.0f,
-            0.9f
+            0.25f
     ));
 
     public static void register(IEventBus modEventBus) {

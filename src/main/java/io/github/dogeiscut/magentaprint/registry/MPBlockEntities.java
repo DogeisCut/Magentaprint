@@ -2,6 +2,7 @@ package io.github.dogeiscut.magentaprint.registry;
 
 import io.github.dogeiscut.magentaprint.Magentaprint;
 import net.minecraft.core.registries.Registries;
+import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.entity.BlockEntityType;
 import net.neoforged.bus.api.IEventBus;
@@ -18,10 +19,10 @@ public final class MPBlockEntities {
     public static <T extends BlockEntity> Supplier<BlockEntityType<T>> blockEntity(
             String name,
             BlockEntityType.BlockEntitySupplier<T> factory,
-            Supplier<? extends net.minecraft.world.level.block.Block>... blocks
+            Supplier<? extends Block>... blocks
     ) {
         return BLOCK_ENTITY_TYPES.register(name, () -> {
-            net.minecraft.world.level.block.Block[] resolved = new net.minecraft.world.level.block.Block[blocks.length];
+            Block[] resolved = new Block[blocks.length];
             for (int i = 0; i < blocks.length; i++) {
                 resolved[i] = blocks[i].get();
             }
