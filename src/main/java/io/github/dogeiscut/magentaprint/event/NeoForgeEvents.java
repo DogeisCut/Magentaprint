@@ -1,7 +1,9 @@
 package io.github.dogeiscut.magentaprint.event;
 
 import io.github.dogeiscut.magentaprint.Magentaprint;
+import io.github.dogeiscut.magentaprint.content.entities.creative_creature.CreativeCreatureEntity;
 import io.github.dogeiscut.magentaprint.registry.MPAttributes;
+import io.github.dogeiscut.magentaprint.registry.MPEntities;
 import net.minecraft.util.Mth;
 import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.world.damagesource.DamageTypes;
@@ -11,6 +13,7 @@ import net.minecraft.world.entity.ai.attributes.AttributeInstance;
 import net.minecraft.world.entity.ai.attributes.AttributeMap;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.common.EventBusSubscriber;
+import net.neoforged.neoforge.event.entity.EntityAttributeCreationEvent;
 import net.neoforged.neoforge.event.entity.EntityAttributeModificationEvent;
 import net.neoforged.neoforge.event.entity.living.LivingIncomingDamageEvent;
 
@@ -18,6 +21,11 @@ import net.neoforged.neoforge.event.entity.living.LivingIncomingDamageEvent;
 public final class NeoForgeEvents {
 
     private NeoForgeEvents() {
+    }
+
+    @SubscribeEvent
+    public static void registerAttributes(EntityAttributeCreationEvent event) {
+        event.put(MPEntities.CREATIVE_CREATURE.get(), CreativeCreatureEntity.createAttributes());
     }
 
     @SubscribeEvent

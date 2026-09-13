@@ -8,6 +8,7 @@ import net.minecraft.world.entity.EquipmentSlotGroup;
 import net.minecraft.world.food.FoodProperties;
 import net.minecraft.world.item.ArmorItem;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.SpawnEggItem;
 import net.minecraft.world.level.block.Block;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredBlock;
@@ -64,6 +65,17 @@ public final class MPItems {
                     "creative_boots",
                     0.25d
             ))
+    );
+
+    public static final Supplier<SpawnEggItem> CREATIVE_CREATURE_SPAWN_EGG = ITEMS.registerItem(
+            "creative_creature_spawn_egg",
+            properties -> new SpawnEggItem(
+                    MPEntities.CREATIVE_CREATURE.get(),
+                    0x22005E,
+                    0x82249E,
+                    properties
+            ),
+            new Item.Properties()
     );
 
 
