@@ -9,16 +9,15 @@ import net.neoforged.api.distmarker.Dist;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.common.EventBusSubscriber;
-import net.neoforged.fml.common.Mod;
 import net.neoforged.neoforge.client.event.EntityRenderersEvent;
 
 @EventBusSubscriber(modid = Magentaprint.MOD_ID, bus = EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 public class MagentaprintClient {
 
+    public static final ModelLayerLocation CREATIVE_CREATURE_LAYER = new ModelLayerLocation(ResourceLocation.fromNamespaceAndPath(Magentaprint.MOD_ID, "creative_creature"), "main");
+
     public MagentaprintClient(IEventBus modEventBus) {
     }
-
-    public static final ModelLayerLocation CREATIVE_CREATURE_LAYER = new ModelLayerLocation(ResourceLocation.fromNamespaceAndPath(Magentaprint.MOD_ID, "creative_creature"), "main");
 
     @SubscribeEvent
     public static void registerLayerDefinitions(EntityRenderersEvent.RegisterLayerDefinitions event) {

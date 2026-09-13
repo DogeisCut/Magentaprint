@@ -10,7 +10,7 @@ import net.neoforged.neoforge.registries.DeferredRegister;
 
 public final class MPAttributes {
 
-    public static final DeferredRegister<Attribute> ATTRIBUTES  =
+    public static final DeferredRegister<Attribute> ATTRIBUTES =
             DeferredRegister.create(Registries.ATTRIBUTE, Magentaprint.MOD_ID);
 
     public static final Holder<Attribute> TOTAL_DAMAGE_REDUCTION = ATTRIBUTES.register("total_damage_reduction", () -> new PercentageAttribute(

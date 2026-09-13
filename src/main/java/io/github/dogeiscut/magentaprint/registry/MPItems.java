@@ -58,7 +58,8 @@ public final class MPItems {
                     "creative_leggings",
                     0.25d
             ))
-    );public static final Supplier<ArmorItem> CREATIVE_BOOTS = item("creative_boots",
+    );
+    public static final Supplier<ArmorItem> CREATIVE_BOOTS = item("creative_boots",
             properties -> new ArmorItem(MPArmorMaterials.CREATIVE, ArmorItem.Type.BOOTS, ItemHelper.creativeArmorProperties(
                     properties,
                     EquipmentSlotGroup.FEET,

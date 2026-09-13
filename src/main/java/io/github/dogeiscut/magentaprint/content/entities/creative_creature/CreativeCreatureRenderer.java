@@ -2,11 +2,8 @@ package io.github.dogeiscut.magentaprint.content.entities.creative_creature;
 
 import io.github.dogeiscut.magentaprint.Magentaprint;
 import io.github.dogeiscut.magentaprint.MagentaprintClient;
-import net.minecraft.client.model.PigModel;
-import net.minecraft.client.model.geom.ModelLayers;
 import net.minecraft.client.renderer.entity.EntityRendererProvider;
 import net.minecraft.client.renderer.entity.MobRenderer;
-import net.minecraft.client.renderer.entity.layers.SaddleLayer;
 import net.minecraft.resources.ResourceLocation;
 import net.neoforged.api.distmarker.Dist;
 import net.neoforged.api.distmarker.OnlyIn;

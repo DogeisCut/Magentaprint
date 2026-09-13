@@ -13,7 +13,6 @@ import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredRegister;
 
 import java.util.EnumMap;
-import java.util.function.Supplier;
 
 
 public final class MPArmorMaterials {
