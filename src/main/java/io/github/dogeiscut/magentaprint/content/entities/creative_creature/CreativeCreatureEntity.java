@@ -60,7 +60,7 @@ public class CreativeCreatureEntity extends Animal {
         if (this.bypassHealthFloor) {
             super.setHealth(health);
         } else {
-            super.setHealth(Math.max(health, 1.0F));
+            super.setHealth(Math.max(health, 2.0F));
         }
     }
 

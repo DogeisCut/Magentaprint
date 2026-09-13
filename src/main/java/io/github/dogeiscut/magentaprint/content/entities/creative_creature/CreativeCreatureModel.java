@@ -4,6 +4,7 @@ import com.google.common.collect.ImmutableList;
 import com.mojang.blaze3d.vertex.PoseStack;
 import com.mojang.blaze3d.vertex.VertexConsumer;
 import net.minecraft.client.model.AgeableListModel;
+import net.minecraft.client.model.ChickenModel;
 import net.minecraft.client.model.geom.ModelPart;
 import net.minecraft.client.model.geom.PartPose;
 import net.minecraft.client.model.geom.builders.*;
@@ -22,6 +23,8 @@ public class CreativeCreatureModel<T extends CreativeCreatureEntity> extends Age
     private final ModelPart back_left_leg;
 
     public CreativeCreatureModel(ModelPart root) {
+        super(true, 13.0F, 0.0F, 2.3F, 1.6F, 14.0F);
+
         this.head = root.getChild("head");
         this.head_rotation = this.head.getChild("head_rotation");
         this.ears_rotation = this.head_rotation.getChild("ears_rotation");
@@ -60,19 +63,8 @@ public class CreativeCreatureModel<T extends CreativeCreatureEntity> extends Age
     }
 
     @Override
-    public void renderToBuffer(PoseStack poseStack, VertexConsumer vertexConsumer, int packedLight, int packedOverlay, int color) {
-        head.render(poseStack, vertexConsumer, packedLight, packedOverlay, color);
-        body.render(poseStack, vertexConsumer, packedLight, packedOverlay, color);
-        tail.render(poseStack, vertexConsumer, packedLight, packedOverlay, color);
-        front_left_leg.render(poseStack, vertexConsumer, packedLight, packedOverlay, color);
-        front_right_leg.render(poseStack, vertexConsumer, packedLight, packedOverlay, color);
-        back_right_leg.render(poseStack, vertexConsumer, packedLight, packedOverlay, color);
-        back_left_leg.render(poseStack, vertexConsumer, packedLight, packedOverlay, color);
-    }
-
-    @Override
     protected Iterable<ModelPart> headParts() {
-        return ImmutableList.of(this.head, this.head_rotation, this.ears_rotation);
+        return ImmutableList.of(this.head);
     }
 
     @Override
